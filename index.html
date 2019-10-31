@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">產品</a></li>
+                        <li><a href="#video" class="nav-link">影片</a></li>
+                        <li><a href="#creative" class="nav-link">介紹</a></li>
+                        <li><a href="#activity" class="nav-link">價錢</a></li>
+                        <li><a href="#standard" class="nav-link">規格</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/Banner1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>價格平民</h1>
+                        <p>相機屆的新秀</p>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Banner2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>人臉對焦</h1>
+                        <p>對焦速度快 讓你感受飄飄然的感覺</p>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Banner3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>翻轉螢幕</h1>
+                        <p>別人都還在看觀景窗 你只要翻起來就好啦</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="640" height="360" width="560" height="315" src="https://www.youtube.com/embed/rgi0MCZf7Zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                三軸穩定器
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="images/function01.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">即時跟焦</span>
+                                <span class="card-text">高精度焦點控制</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>輕鬆使用，一點都不費力。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="images/function02.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">單手掌握</span>
+                                <span class="card-text">人體工學設計，握持更加舒適</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>輕鬆使用，一點都不費力。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="images/function03.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">穩定系統</span>
+                                <span class="card-text">穩定流暢的畫面</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>輕鬆使用，一點都不費力。</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>攝影的救星</h3>
+                    <p>每次看網路上全片幅的相機</br>
+                        不是十萬就是七、八萬起跳</br>
+                        看到瞬間就對攝影沒興趣了</br>
+                        那sony A73就是攝影的救星拉</br>
+                        只要五萬多就有了，聽了是不是就很想買
+                    </p>
+                    <h3>攝影界的新秀</h3>
+                    <p>可以錄製4K影片</br>
+                        影片和照片一機可得</br>
+                        機身輕便好帶出門</br>
+                        讓攝影師天天都開心
+                    </p>
+                    <h1>SONY A73</h1>
+                    <p>相機屆的清流 清流屆的相機</br>
+                        給您兼顧拍照與舒適的畫面
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/egg.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/activity_img1.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h2>售價： <span>54,000 </span>元</h2>
+                    <h1>加送</h1>
+                    <h2>原廠電池乙個</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/activity_img2.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <h5 scope="col">規格說明：</h5>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">中英文品名：</th>
+                                <td>SONY A73全片幅相機</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">畫質：</th>
+                                <td>2,420 萬像素</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">片幅：</th>
+                                <td colspan="2">Exmor R 全片幅 CMOS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">防手震：</th>
+                                <td colspan="2">5 軸 5 級機身防震</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ISO：</th>
+                                <td colspan="2">最高 ISO 204800 感光度</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">追焦功能：</th>
+                                <td colspan="2">10fps 追焦連拍</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">對焦點：</th>
+                                <td colspan="2">693 點相位檢測對焦點</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">錄影畫素：</th>
+                                <td colspan="2">4K 影片</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">動態範圍：</th>
+                                <td colspan="2">15 級動態範圍</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">卡槽：</th>
+                                <td colspan="2">雙插卡</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        <tr>
+                            <h5 scope="col">使用說明：</h5>
+                        </tr>
+                        <ul class="standard_use">
+                            <li>您可以透過觸碰螢幕對焦在想要的位置。</li>
+                            <li>選取［彈性定點］或［擴充彈性定點］以外的［對焦區域］。</li>
+                            <li>MENU→（拍攝設定1）→［中央鎖定AF］→［關］。</li>
+                            <li>觸控螢幕。</li>
+                            <li>相機會對焦在觸碰的被攝體上。使用觀景窗拍攝時，不能使用點對焦。</li>
+                            <li>選取［彈性定點］或［擴充彈性定點］以外的［對焦區域］。</li>
+                            <li>MENU→（拍攝設定1）→［中央鎖定AF］→［關］。</li>
+                            <li>在錄製之前或錄製過程中，觸碰您要對焦的被攝體。</li>
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="row remind">
+                <h4>貼心提醒</h4>
+                <div class="w-100"></div>
+                <p>使用時請留意：</p>
+                <ul>
+                    <li>拍照時請勿重摔</li>
+                    <li>請將機身放在防潮箱，以免入塵及壞掉。</li>
+                    <li>如商品有問題請拿回原廠送修</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/logo_blue.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>專 線：04-33556688</li>
+                        <li>服務時間：週一至週五 8:00 ~ 11:00</li>
+                        <li>服務信箱：service@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 SONY A73 .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
